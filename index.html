@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoWatt — See how much a home saves with clean energy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <svg style="display: none;">
+    <defs>
+      <symbol id="i-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M12 7v5l3.5 2"/>
+      </symbol>
+
+      <symbol id="i-drop" viewBox="0 0 24 24">
+        <path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/>
+      </symbol>
+
+      <symbol id="i-wallet" viewBox="0 0 24 24">
+        <rect x="3" y="6" width="18" height="13" rx="2"/>
+        <path d="M3 10h18"/>
+        <circle cx="17" cy="14.5" r="1.2" fill="currentColor" stroke="none"/>
+      </symbol>
+
+      <symbol id="i-cloud" viewBox="0 0 24 24">
+        <path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.1 4 4 0 0 0 7 18z"/>
+      </symbol>
+
+      <symbol id="i-trend-down" viewBox="0 0 24 24">
+        <path d="M3 6l7 7 4-4 7 7"/>
+        <path d="M15 15h6v-6"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">EcoWatt</div>
+
+      <nav class="links">
+        <button class="navlink active" data-target="top">Overview</button>
+        <button class="navlink" data-target="sources">Efficiency</button>
+        <button class="navlink" data-target="dashboard">History</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="eyebrow">
+        <span class="dot">
+          <svg class="icon">
+            <use href="#i-clock"></use>
+          </svg>
+        </span>
+        24-HOUR ENERGY COMPARISON
+      </div>
+
+      <div class="hero-grid">
+        <div>
+          <h1>
+            See how much a home saves<br>
+            with <span class="accent">clean energy</span>
+          </h1>
+
+          <p class="hero-copy">
+            Compare a full day of energy use between a conventional
+            grid-powered house and an eco-friendly home running on
+            solar, wind, and biomass.
+          </p>
+
+          <div class="cta-row">
+            <button class="btn btn-primary" id="explore-btn">
+              Explore the dashboard ↓
+            </button>
+
+            <button class="btn btn-secondary" id="why-btn">
+              Why switch?
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-hero">
+            <div class="label">Saved / year</div>
+            <div class="value">₹1,27,312</div>
+            <div class="delta">+12% from projected</div>
+          </div>
+
+          <div class="stat-pair">
+            <div class="stat-small">
+              <div class="label">Energy saved / day</div>
+              <div class="value">72%</div>
+            </div>
+
+            <div class="stat-small">
+              <div class="label">kWh avoided / day</div>
+              <div class="value">43.6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sources reveal" id="sources">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Two ways to power a home</h2>
+        <p>
+          Conventional energy relies on burning finite fossil fuels.
+          Eco-friendly sources harvest energy that nature renews every
+          day, without the emissions.
+        </p>
+      </div>
+
+      <div class="sources-grid">
+
+        <div class="source-card">
+          <div class="source-title">
+            <span class="dot"></span>
+            Conventional sources
+          </div>
+
+          <div class="source-item">
+            <div class="source-icon">
+              <svg class="icon source-svg">
+                <rect x="3" y="10" width="7" height="7" rx="1.5"/>
+                <rect x="11" y="6" width="7" height="11" rx="1.5"/>
+                <rect x="19" y="12" width="2" height="5" rx="1"/>
+              </svg>
+
+              <svg class="smoke">
+                <circle cx="4" cy="14" r="2"/>
+                <circle cx="9" cy="10" r="2"/>
+                <circle cx="6" cy="6" r="1.6"/>
+              </svg>
+            </div>
+
+            <div>
+              <h4>Coal</h4>
+              <p>
+                Burned in power plants for electricity. High carbon
+                output and heavy air pollution.
+              </p>
+            </div>
+          </div>
+
+          <div class="source-item">
+            <div class="source-icon">
+              <svg class="icon">
+                <use href="#i-drop"></use>
+              </svg>
+            </div>
+
+            <div>
+              <h4>Oil</h4>
+              <p>
+                Used for heating and backup generation. A finite
+                resource with volatile prices.
+              </p>
+            </div>
+          </div>
+
+          <div class="source-item">
+            <div class="source-icon">
+              <svg class="icon">
+                <path d="M12 21c4 0 6-2.5 6-6-0.2-2.5-1.5-4-2.5-5.5C15 11 14 12 14 13c0-3-1.5-5-3-7-1 3-4 5-4 9 0 3 2 6 5 6z"/>
+              </svg>
+
+              <svg class="smoke orange-smoke">
+                <circle cx="4" cy="14" r="2"/>
+                <circle cx="9" cy="10" r="2"/>
+                <circle cx="6" cy="6" r="1.6"/>
+              </svg>
+            </div>
+
+            <div>
+              <h4>Natural Gas</h4>
+              <p>
+                Cleaner than coal but still a fossil fuel that emits
+                CO₂ when combusted.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="source-card eco">
+          <div class="source-title">
+            <span class="dot"></span>
+            Eco-friendly sources
+          </div>
+
+          <div class="source-item">
+            <div class="source-icon solar-icon">
+              <svg class="icon solar-svg">
+                <g class="panel-ray">
+                  <line x1="4" y1="3" x2="6" y2="5"/>
+                </g>
+
+                <g class="panel-ray">
+                  <line x1="12" y1="1.5" x2="12" y2="3.5"/>
+                </g>
+
+                <g class="panel-ray">
+                  <line x1="20" y1="3" x2="18" y2="5"/>
+                </g>
+
+                <path d="M3 9 L21 6 L22 18 L2 20"/>
+                <path d="M7.3 8.3 L6.9 19.3"/>
+                <path d="M12 7.5 L11.9 19"/>
+                <path d="M16.7 6.7 L16.9 18.7"/>
+                <path d="M2.5 14.6 L21.6 12.2"/>
+                <path d="M9 20 L8 23 M15 19.4 L16.5 22.8"/>
+
+                <clipPath id="panel-clip">
+                  <path d="M3 9 L21 6 L22 18 L2 20 Z"/>
+                </clipPath>
+
+                <rect
+                  class="panel-glint"
+                  x="-4"
+                  y="4"
+                  width="6"
+                  height="18"
+                  fill="#fff"
+                  opacity="0"
+                  clip-path="url(#panel-clip)"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <h4>Solar</h4>
+              <p>
+                Photovoltaic panels convert daylight into free,
+                zero-emission electricity.
+              </p>
+            </div>
+          </div>
+
+          <div class="source-item">
+            <div class="source-icon">
+              <svg class="icon turbine-svg">
+                <line x1="12" y1="22" x2="12" y2="10"/>
+
+                <g class="turbine-blades">
+                  <path d="M12 10 L12 3 L15.2 8.2 Z"/>
+                  <path d="M12 10 L12 3 L15.2 8.2 Z" transform="rotate(120 12 10)"/>
+                  <path d="M12 10 L12 3 L15.2 8.2 Z" transform="rotate(240 12 10)"/>
+                </g>
+
+                <circle cx="12" cy="10" r="1.3" fill="currentColor"/>
+              </svg>
+            </div>
+
+            <div>
+              <h4>Wind</h4>
+              <p>
+                Turbines turn breezes into power, day and night,
+                with no fuel cost.
+              </p>
+            </div>
+          </div>
+
+          <div class="source-item">
+            <div class="source-icon">
+              <svg class="icon leaf-icon">
+                <path d="M5 19c8 0 14-6 14-14 0 0-13-1-14 8-.4 3 0 6 0 6z"/>
+                <path d="M5 19c1-4 4-8 9-11"/>
+              </svg>
+            </div>
+
+            <div>
+              <h4>Biomass</h4>
+              <p>
+                Organic waste becomes renewable energy, closing
+                the carbon loop.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="dashboard" id="dashboard">
+    <div class="wrap">
+
+      <div class="dash-head reveal">
+        <div>
+          <h2>The 24-hour comparison dashboard</h2>
+          <p>
+            Toggle between the two homes to watch consumption,
+            cost, and carbon shift in real time.
+          </p>
+        </div>
+
+        <div class="toggle-row state-eco" id="toggle-row">
+          <span class="conv-label">Conventional House</span>
+
+          <button
+            class="switch on"
+            id="house-switch"
+            aria-label="Toggle house type"
+            aria-pressed="true">
+          </button>
+
+          <span class="eco-label">
+            <svg class="icon leaf-small">
+              <path d="M5 19c8 0 14-6 14-14 0 0-13-1-14 8-.4 3 0 6 0 6z"/>
+              <path d="M5 19c1-4 4-8 9-11"/>
+            </svg>
+            Eco-Friendly House
+          </span>
+        </div>
+      </div>
+
+      <div class="metrics-row reveal">
+
+        <div class="metric-card">
+          <div class="metric-top">
+            <span class="metric-icon">
+              <svg class="icon bolt-icon">
+                <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/>
+              </svg>
+            </span>
+            Daily consumption
+          </div>
+
+          <div class="metric-value" id="m-consumption">4.7 kWh</div>
+          <div class="metric-sub" id="m-consumption-sub">
+            Drawn from solar, wind &amp; biomass
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-top">
+            <span class="metric-icon">
+              <svg class="icon">
+                <use href="#i-wallet"></use>
+              </svg>
+            </span>
+            Daily cost
+          </div>
+
+          <div class="metric-value" id="m-cost">₹0.00</div>
+          <div class="metric-sub" id="m-cost-sub">
+            Self-generated, zero grid cost
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-top">
+            <span class="metric-icon">
+              <svg class="icon">
+                <use href="#i-cloud"></use>
+              </svg>
+            </span>
+            Daily CO₂
+          </div>
+
+          <div class="metric-value" id="m-co2">0.7 kg</div>
+          <div class="metric-sub">Emissions footprint</div>
+        </div>
+
+        <div class="metric-card highlight">
+          <div class="metric-top">
+            <span class="metric-icon">
+              <svg class="icon">
+                <use href="#i-trend-down"></use>
+              </svg>
+            </span>
+            Energy saved
+          </div>
+
+          <div class="metric-value" id="m-saved">72%</div>
+          <div class="metric-sub" id="m-saved-sub">
+            43.6 kWh vs conventional
+          </div>
+        </div>
+
+      </div>
+
+      <div class="chart-row">
+
+        <div class="panel reveal">
+          <div class="panel-head">
+            <div>
+              <h3>Hourly consumption over 24 hours</h3>
+              <p class="sub">
+                Energy drawn from the grid each hour (kWh)
+              </p>
+            </div>
+
+            <div class="legend">
+              <span>
+                <span class="swatch conventional-dot"></span>
+                Conventional
+              </span>
+
+              <span>
+                <span class="swatch eco-dot"></span>
+                Eco-friendly
+              </span>
+            </div>
+          </div>
+
+          <svg
+            viewBox="0 0 600 220"
+            width="100%"
+            height="220"
+            preserveAspectRatio="none">
+
+            <path
+              id="area-conventional"
+              d="M0,190 C40,185 70,120 100,100 C130,80 150,150 180,175 C210,190 250,195 280,180 C320,160 350,60 380,50 C410,45 440,90 470,120 C510,155 550,175 600,185 L600,220 L0,220 Z"
+              fill="rgba(181,80,42,0.10)"
+            />
+
+            <path
+              id="area-eco"
+              d="M0,205 C60,200 100,195 150,198 C200,200 240,190 280,192 C320,193 360,175 400,182 C440,188 480,150 520,160 C550,166 580,175 600,178 L600,220 L0,220 Z"
+              fill="rgba(18,134,79,0.10)"
+            />
+
+            <path
+              id="line-conventional"
+              d="M0,190 C40,185 70,120 100,100 C130,80 150,150 180,175 C210,190 250,195 280,180 C320,160 350,60 380,50 C410,45 440,90 470,120 C510,155 550,175 600,185"
+              fill="none"
+              stroke="#b5502a"
+              stroke-width="2.5"
+            />
+
+            <path
+              id="line-eco"
+              d="M0,205 C60,200 100,195 150,198 C200,200 240,190 280,192 C320,193 360,175 400,182 C440,188 480,150 520,160 C550,166 580,175 600,178"
+              fill="none"
+              stroke="#12864f"
+              stroke-width="2.5"
+            />
+          </svg>
+
+          <div class="chart-axis">
+            <span>12 AM</span>
+            <span>4 AM</span>
+            <span>8 AM</span>
+            <span>12 PM</span>
+            <span>4 PM</span>
+            <span>8 PM</span>
+          </div>
+        </div>
+
+        <div class="panel donut-wrap reveal">
+
+          <div class="donut-heading">
+            <h3 id="mix-title">Eco-friendly energy mix</h3>
+            <p class="sub">How this home is powered</p>
+          </div>
+
+          <svg class="donut-svg" viewBox="0 0 200 200">
+            <circle
+              cx="100"
+              cy="100"
+              r="80"
+              fill="none"
+              stroke="#eef1f0"
+              stroke-width="22"
+            />
+
+            <circle
+              id="seg1"
+              class="donut-seg"
+              cx="100"
+              cy="100"
+              r="80"
+              fill="none"
+              stroke="#0f6b45"
+              stroke-width="22"
+              stroke-dasharray="271 502"
+              stroke-dashoffset="0"
+              transform="rotate(-90 100 100)"
+              stroke-linecap="round">
+              <title id="seg1-title">Solar — 54%</title>
+            </circle>
+
+            <circle
+              id="seg2"
+              class="donut-seg"
+              cx="100"
+              cy="100"
+              r="80"
+              fill="none"
+              stroke="#12864f"
+              stroke-width="22"
+              stroke-dasharray="155 502"
+              stroke-dashoffset="-271"
+              transform="rotate(-90 100 100)"
+              stroke-linecap="round">
+              <title id="seg2-title">Wind — 31%</title>
+            </circle>
+
+            <circle
+              id="seg3"
+              class="donut-seg"
+              cx="100"
+              cy="100"
+              r="80"
+              fill="none"
+              stroke="#a7e3c3"
+              stroke-width="22"
+              stroke-dasharray="76 502"
+              stroke-dashoffset="-426"
+              transform="rotate(-90 100 100)"
+              stroke-linecap="round">
+              <title id="seg3-title">Biomass — 15%</title>
+            </circle>
+
+            <text
+              x="100"
+              y="98"
+              text-anchor="middle"
+              font-size="30"
+              font-weight="800"
+              fill="#0b3d2b"
+              id="mix-center-value">
+              100%
+            </text>
+
+            <text
+              x="100"
+              y="118"
+              text-anchor="middle"
+              font-size="11"
+              font-weight="700"
+              fill="#5b6b66"
+              id="mix-center-label">
+              RENEWABLE
+            </text>
+          </svg>
+
+          <div class="donut-legend">
+            <div>
+              <h5 id="leg1-pct">54%</h5>
+              <span id="leg1-name">Solar</span>
+            </div>
+
+            <div>
+              <h5 id="leg2-pct">31%</h5>
+              <span id="leg2-name">Wind</span>
+            </div>
+
+            <div>
+              <h5 id="leg3-pct">15%</h5>
+              <span id="leg3-name">Biomass</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel bars-panel reveal">
+          <div class="panel-head">
+            <div>
+              <h3>Consumption, cost &amp; CO₂ at a glance</h3>
+              <p class="sub">
+                Conventional vs. eco-friendly, scaled per category
+                so both bars are comparable
+              </p>
+            </div>
+
+            <div class="legend">
+              <span>
+                <span class="swatch conventional-dot"></span>
+                Conventional
+              </span>
+
+              <span>
+                <span class="swatch eco-dot"></span>
+                Eco-friendly
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-groups">
+
+            <div class="bar-group">
+              <div class="bars">
+                <div class="bar-col">
+                  <span class="bar-value" id="bv-consumption-conv">
+                    16.8 kWh
+                  </span>
+                  <div
+                    class="bar bar-conv"
+                    data-mode="conventional"
+                    style="--h:100%;">
+                  </div>
+                </div>
+
+                <div class="bar-col">
+                  <span class="bar-value" id="bv-consumption-eco">
+                    4.7 kWh
+                  </span>
+                  <div
+                    class="bar bar-eco"
+                    data-mode="eco"
+                    style="--h:28%;">
+                  </div>
+                </div>
+              </div>
+
+              <div class="bar-cat-label">Consumption</div>
+            </div>
+
+            <div class="bar-group">
+              <div class="bars">
+                <div class="bar-col">
+                  <span class="bar-value" id="bv-cost-conv">
+                    ₹134.40
+                  </span>
+                  <div
+                    class="bar bar-conv"
+                    data-mode="conventional"
+                    style="--h:100%;">
+                  </div>
+                </div>
+
+                <div class="bar-col">
+                  <span class="bar-value" id="bv-cost-eco">
+                    ₹0.00
+                  </span>
+                  <div
+                    class="bar bar-eco"
+                    data-mode="eco"
+                    style="--h:3%;">
+                  </div>
+                </div>
+              </div>
+
+              <div class="bar-cat-label">Daily cost</div>
+            </div>
+
+            <div class="bar-group">
+              <div class="bars">
+                <div class="bar-col">
+                  <span class="bar-value" id="bv-co2-conv">
+                    4.9 kg
+                  </span>
+                  <div
+                    class="bar bar-conv"
+                    data-mode="conventional"
+                    style="--h:100%;">
+                  </div>
+                </div>
+
+                <div class="bar-col">
+                  <span class="bar-value" id="bv-co2-eco">
+                    0.7 kg
+                  </span>
+                  <div
+                    class="bar bar-eco"
+                    data-mode="eco"
+                    style="--h:14%;">
+                  </div>
+                </div>
+              </div>
+
+              <div class="bar-cat-label">Daily CO₂</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-row reveal">
+
+        <div class="panel bottom-card">
+          <h3>Electricity bill comparison</h3>
+          <p id="bill-line">
+            Eco-friendly saves about ₹348.80 every day
+          </p>
+        </div>
+
+        <div class="panel bottom-card">
+          <h3>Carbon footprint</h3>
+          <p class="muted" id="carbon-line">
+            CO₂ emitted per day: 0.7 kg (eco-friendly)
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 EcoWatt. Data shown is illustrative.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
