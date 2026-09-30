@@ -1,147 +1,414 @@
-EcoWatt 🌱
+<div align="center">
+🌿 EcoWatt
+⚡ Power Your Home. 🌱 Protect the Planet.
 
-EcoWatt is a small web project that shows how much energy, money, and CO₂ can be saved by using cleaner energy sources at home.
+An interactive energy dashboard that visualizes the difference between conventional and renewable energy.
 
-The website compares a regular grid-powered house with a home using solar, wind, and biomass. It also includes an interactive dashboard so the values and charts change when switching between the two types of homes.
-
-✨ What’s Included
-
-Clean and responsive landing page
-
-Conventional vs eco-friendly energy comparison
-
-Interactive house toggle
-
-24-hour energy consumption chart
-
-Renewable energy mix chart
-
-Consumption, cost, and CO₂ comparison
-
-Daily and yearly savings information
-
-Smooth scrolling navigation
-
-Simple hover and scroll animations
-
-Mobile-friendly layout
-
-Reduced-motion support
-
-📂 Project Structure
-EcoWatt/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+<br>
 
 
-The project is kept simple, with the HTML, CSS, and JavaScript separated into their own files.
+
+
+
+
+<br>
+
+☀️ Solar   💨 Wind   🌿 Biomass   ⚡ Energy   🌍 Sustainability
+
+</div>
+<div align="center">
+🌎 A Greener Way to See Energy
+
+EcoWatt is a small interactive web project that demonstrates how switching to cleaner energy sources can affect:
+
+⚡ Energy Consumption
+💰 Energy Cost
+🌍 CO₂ Emissions
+</div>
+🌱 The Idea
+
+Imagine two homes.
+
+🏭 The Conventional Home
+
+Powered by traditional energy sources:
+
+🪨 Coal
+🛢️ Oil
+🔥 Natural Gas
+
+🌿 The Eco Home
+
+Powered by renewable alternatives:
+
+☀️ Solar
+💨 Wind
+🌱 Biomass
+
+EcoWatt lets you switch between these two homes and watch the dashboard change in real time.
+
+             ENERGY CHOICE
+                   │
+        ┌──────────┴──────────┐
+        │                     │
+        ▼                     ▼
+   🏭 CONVENTIONAL       🌿 ECO-FRIENDLY
+        │                     │
+   Coal • Oil           Solar • Wind
+   Natural Gas              Biomass
+        │                     │
+        └──────────┬──────────┘
+                   ▼
+            📊 COMPARISON
+                   │
+        ┌──────────┼──────────┐
+        ▼          ▼          ▼
+       ⚡         💰          🌍
+   Consumption    Cost        CO₂
+
+🍃 Features
+<table> <tr> <td align="center">☀️<br><b>Energy Comparison</b><br><sub>Compare conventional & renewable sources.</sub></td> <td align="center">📊<br><b>Interactive Dashboard</b><br><sub>Switch between different home types.</sub></td> <td align="center">⚡<br><b>Energy Tracking</b><br><sub>View daily consumption patterns.</sub></td> </tr> <tr> <td align="center">💰<br><b>Cost Comparison</b><br><sub>Compare estimated energy costs.</sub></td> <td align="center">🌍<br><b>CO₂ Tracking</b><br><sub>Visualize estimated emissions.</sub></td> <td align="center">🌱<br><b>Renewable Mix</b><br><sub>See the renewable energy breakdown.</sub></td> </tr> <tr> <td align="center">📈<br><b>24-Hour Chart</b><br><sub>Explore daily energy consumption.</sub></td> <td align="center">📅<br><b>Savings</b><br><sub>View daily & yearly savings.</sub></td> <td align="center">📱<br><b>Responsive</b><br><sub>Works across different devices.</sub></td> </tr> </table>
+🌳 Explore the Dashboard
+
+The dashboard is the heart of EcoWatt.
+
+Use the house toggle to switch between:
+
+<div align="center">
+🏭 Conventional House
+
+🪨 Coal + 🛢️ Oil + 🔥 Natural Gas
+
+⬇️
+
+📊 EcoWatt Dashboard
+
+⬇️
+
+🌿 Eco-Friendly House
+
+☀️ Solar + 💨 Wind + 🌱 Biomass
+
+</div>
+
+When the selection changes, the dashboard updates:
+
+⚡ Energy consumption
+
+💰 Energy cost
+
+🌍 CO₂ emissions
+
+🌱 Renewable energy mix
+
+📊 Comparison bars
+
+📈 Energy charts
+
+📅 Savings information
+
+📊 Sample Energy Data
+
+🌱 Demonstration data only
+
+🌿 Metric	🏭 Conventional	🌱 Eco-Friendly
+⚡ Daily Consumption	16.8 kWh	4.7 kWh
+💰 Daily Cost	₹134.40	₹0.00
+🌍 Daily CO₂	4.9 kg	0.7 kg
+🌱 Energy Saved	0%	72%
+<div align="center">
+🌱 Less Consumption
+💚 Lower Cost
+🌍 Lower Estimated Emissions
+</div>
+
+These values are sample figures used to demonstrate the dashboard. They do not represent a specific household or real-world energy calculation.
+
+🌞 Energy Sources
+<div align="center">
+☀️ Solar	💨 Wind	🌱 Biomass
+Clean Energy	Renewable Power	Organic Energy
+Sunlight	Wind Power	Organic Material
+</div>
+
+EcoWatt uses these sources to create a simple visual representation of a renewable-energy household.
+
+🎨 Eco Design
+
+EcoWatt's visual style is inspired by nature and clean technology.
+
+🌿 Green
+
+Represents:
+
+Renewable Energy • Nature • Growth • Sustainability
+
+🟤 Earth / Clay
+
+Represents:
+
+Traditional Energy • Fuel • Conventional Sources
+
+⚪ Clean White
+
+Used for:
+
+Cards • Content • Dashboard Elements
+
+🌱 Overall Feel
+
+The interface aims to feel:
+
+Clean · Calm · Natural · Modern · Informative
 
 🛠️ Built With
+<div align="center">
+🌐 HTML5
 
-HTML
+Structure & Content
 
-CSS
+🎨 CSS3
 
-JavaScript
+Design & Responsive Layout
 
-SVG
+⚡ JavaScript
 
-CSS animations
+Interactions & Dashboard Logic
 
-There are no external frameworks or libraries used.
+◇ SVG
+
+Scalable Visual Elements
+
+</div>
+
+No frameworks.
+
+No heavy libraries.
+
+No complicated setup.
+
+Just:
+
+🌐 HTML
+🎨 CSS
+⚡ JavaScript
+◇ SVG
+
+📂 Project Structure
+🌱 EcoWatt/
+│
+├── 🌐 index.html
+│   └── Website structure
+│
+├── 🎨 style.css
+│   └── Eco-themed styling & responsive design
+│
+├── ⚡ script.js
+│   └── Dashboard interactions
+│
+└── 📖 README.md
+    └── Project documentation
 
 🚀 Getting Started
 
-You don't need to install anything to run the project.
+No installation required.
 
-Just download the project and open:
+🌱 01 — Clone
+git clone <your-repository-url>
+
+🌿 02 — Enter the project
+cd EcoWatt
+
+🌎 03 — Open
+
+Simply open:
 
 index.html
 
 
 in your browser.
 
-If you're using VS Code, you can also open the project with Live Server for easier development.
+That's it. 🌱
 
-📊 Dashboard
+💻 Development
 
-The dashboard is the main interactive part of the website.
+Using VS Code?
 
-You can switch between:
+You can use Live Server to make development easier.
 
-Conventional House
+✏️ Edit
+   ↓
+💾 Save
+   ↓
+🔄 Live Server
+   ↓
+🌐 Browser
+   ↓
+🌱 See Changes
 
-Uses:
+📱 Designed for Every Screen
 
-Coal
+EcoWatt adapts to:
 
-Oil
+        🖥️ Desktop
+             ↓
+        💻 Laptop
+             ↓
+         📱 Tablet
+             ↓
+         📱 Mobile
 
-Natural Gas
-
-Eco-Friendly House
-
-Uses:
-
-Solar
-
-Wind
-
-Biomass
-
-When the switch is changed, the dashboard updates the displayed energy consumption, cost, CO₂ emissions, energy mix, and comparison bars.
-
-🎨 Design
-
-The design uses a simple green and neutral color palette to match the clean-energy theme.
-
-🟢 Green is used for renewable energy
-
-🟤 Clay/orange is used for conventional energy
-
-⚪ White cards keep the interface clean
-
-📱 Responsive layouts make it usable on smaller screens
-
-Small animations are also included to make the page feel more interactive without making it distracting.
-
-📱 Responsive Design
-
-The layout adjusts for different screen sizes.
 
 On smaller screens:
 
-Navigation links are hidden
-
-Content changes to a single-column layout
+Navigation becomes simplified
 
 Dashboard cards stack vertically
 
-Charts resize with the screen
+Charts resize automatically
 
-Buttons and spacing adjust for mobile
+Buttons adapt to smaller displays
 
-⚡ Example Data
+Spacing and typography adjust
 
-The project currently uses sample values such as:
+Content remains easy to read
 
-Metric	Conventional	Eco-Friendly
-Daily consumption	16.8 kWh	4.7 kWh
-Daily cost	₹134.40	₹0.00
-Daily CO₂	4.9 kg	0.7 kg
-Energy saved	0%	72%
+♿ Accessibility
 
-These values are only for demonstrating how the dashboard works and are not intended to represent a specific real-world household.
+EcoWatt includes reduced-motion support.
 
-📌 Notes
+If a user's operating system requests reduced motion, unnecessary animations and transitions can be minimized.
 
-EcoWatt is mainly a frontend project made to demonstrate an interactive dashboard and a clean environmental-themed design.
+🌿 The goal:
 
-The data can easily be replaced with real household energy data later if the project is connected to an API, database, or smart-meter system.
+Beautiful without being distracting.
 
-📄 License
+🔮 Growing the Forest
 
-This project is made for learning, experimentation, and demonstration purposes.
+EcoWatt is currently a frontend demonstration, but the project could grow into a more complete energy-monitoring platform.
+
+🌱 Future Ideas
+
+ Real household energy data
+
+ Smart-meter integration
+
+ Energy API integration
+
+ Monthly consumption tracking
+
+ Yearly energy reports
+
+ Historical charts
+
+ Custom electricity prices
+
+ Location-based calculations
+
+ More renewable sources
+
+ Downloadable energy reports
+
+ User accounts
+
+ Dark / nature theme
+
+🔌 From Demo to Real-World Data
+
+The current project uses sample data.
+
+A future version could connect real energy information like this:
+
+             🏠 HOME
+                │
+                ▼
+          ⚡ SMART METER
+                │
+                ▼
+           🔌 ENERGY API
+                │
+                ▼
+          🌱 ECOWATT
+                │
+       ┌────────┼────────┐
+       ▼        ▼        ▼
+      ⚡        💰       🌍
+ Consumption    Cost     CO₂
+
+
+This could turn EcoWatt into a real-time household sustainability dashboard.
+
+📸 Preview
+<div align="center">
+🌿 EcoWatt Dashboard
+
+Add your project screenshots here.
+
+</div>
+screenshots/
+│
+├── 🌳 desktop.png
+├── 🌱 dashboard.png
+└── 🍃 mobile.png
+
+
+Once screenshots are available, they can be displayed directly in this section.
+
+📌 Important
+
+EcoWatt is a learning, experimentation, and demonstration project.
+
+The energy consumption, cost, CO₂, and savings values are currently sample data designed to demonstrate the interactive dashboard.
+
+They should not be treated as precise real-world household measurements.
+
+🤝 Contributing
+
+EcoWatt is primarily a personal project, but ideas and feedback are welcome.
+
+If you have an improvement in mind:
+
+💡 Idea
+ ↓
+🐛 Issue
+ ↓
+🌱 Fork
+ ↓
+🛠️ Improve
+ ↓
+🌳 Pull Request
+
+🌍 The Bigger Idea
+
+Energy isn't just a number.
+
+It's:
+
+⚡ What we consume
+
+💰 What we spend
+
+🌍 What we emit
+
+🌱 And what we can change
+
+EcoWatt is a small project exploring how technology can make those differences easier to understand.
+
+<div align="center">
+🌱 MAKE ENERGY VISIBLE. 🌍
+⚡ USE LESS.
+🌿 THINK CLEANER.
+💚 BUILD A BETTER FUTURE.
+<br>
+
+Made with ❤️ using HTML • CSS • JavaScript
+
+<br>
+
+⭐ If EcoWatt helped or inspired you, consider giving the repository a star!
+
+<br>
+
+🌱 EcoWatt • 2026 🌱
+
+</div>
